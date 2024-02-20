@@ -31,7 +31,7 @@ int main(){
     v.push_back(4);
 
    
-    // itteritor method to traverse the loop
+    // itteritor method to traverse the loop best for traversel as not give error of comaparision between signed and unsigned
        cout<<"itterrior method";
     for(auto it =v.begin();it!=v.end();it++){
        cout<<*it;
