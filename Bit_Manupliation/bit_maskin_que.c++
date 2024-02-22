@@ -39,6 +39,16 @@ void clear_ith_bit(int num ,int i){
     }
     cout<<count<<endl;
  }
+ void toggle(int num,int pos){
+    cout<<(num^(1<<pos))<<endl;
+ }
+
+ void update(int n,int pos ,int value){
+    int mask=~(1<<pos);
+    n=n&mask;
+    cout<<(n|(value<<pos))<< "\n";
+ }
+
 int main(){
     
  // if odd even n&1==0 even;
@@ -70,7 +80,8 @@ int main(){
      // while (n!=0){if(n&1)==0}count++ ;n=n>>1}
      
      count_bit(12);
-     
-
+     // toggle 
+     toggle(5,1);     
+     update(5,1,1);
 
 }
